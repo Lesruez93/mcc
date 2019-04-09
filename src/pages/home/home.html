@@ -1,0 +1,62 @@
+<ion-header>
+
+    <ion-toolbar color="primary">
+        <ion-title text-center>Mutare City Council</ion-title>
+        <ion-buttons end=""><ion-icon name="power" style="font-size: 25px"  color="danger"></ion-icon></ion-buttons>
+    </ion-toolbar>
+
+</ion-header>
+
+<
+    <ion-content padding="" >
+        <div text-center=""> <img src="../assets/img/logo.png"class=" cover" ></div>
+
+    <ion-grid>
+    <ion-row>
+        <ion-col >
+            <ion-card (click)="pay()" style="background-color: #007069">
+          <div padding="" text-center="">
+              <ion-icon name="ios-card" color="primary" style="font-size: 50px"></ion-icon>
+
+              <p style="color: white">Pay</p></div>
+            </ion-card>
+        </ion-col>
+        <ion-col >
+            <ion-card (click)="gotoFaults()"style="background-color: #ffd680">
+
+                <div padding="" text-center="">
+                    <ion-icon name="ios-warning" color="danger" style="font-size: 50px"></ion-icon>
+
+                    <p style="color: white">Report Fault</p>
+                </div>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+</ion-grid>
+    <ion-grid>
+    <ion-row>
+        <ion-col >
+            <ion-card (click)="pay()" style="background-color: #253a70">
+                <div padding="" text-center="">
+                    <ion-icon name="ios-paper-outline" color="gry" style="font-size: 50px"></ion-icon>
+
+                    <p style="font-size: small; color: white">Payment History</p></div>
+            </ion-card>
+        </ion-col>
+        <ion-col >
+            <ion-card (click)="gotoFaults()"style="background-color: #3dffb3">
+
+
+                <div padding="" text-center="">
+                    <ion-icon name="ios-person" color="lt" style="font-size: 50px"></ion-icon>
+
+                    <p style="color: white">Profile</p>
+                </div>
+            </ion-card>
+        </ion-col>
+    </ion-row>
+
+</ion-grid>
+</ion-content>
+
+

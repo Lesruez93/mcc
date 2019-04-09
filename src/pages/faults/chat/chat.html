@@ -1,0 +1,91 @@
+<ion-header>
+
+  <ion-navbar color="primary">
+    <ion-title>Conversations</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <h2 text-center> {{item.title}}</h2>
+    <p padding-left>Location: {{item.location}}  </p>
+    <p padding-left>From:  {{item.member}} </p>
+    <p padding>{{item.message}} </p>
+  </ion-card>
+  <div class="message-wrap">
+
+    <div *ngFor="let msg of reply |async"
+         class="message"
+         [class.left]=" msg.uid === uid"
+         [class.right]=" msg.uid != uid">
+
+      <img *ngIf="msg.image" class="user-img"   src="{{msg.image}}">
+      <img  *ngIf="!msg.image" class="user-img" src="./assets/img/speakers/profpic.png">
+
+      <div class="msg-detail">
+        <div class="msg-info">
+          <p>
+            {{msg.time |amTimeAgo:'en' }}</p>
+          <p>By:  Admin</p>
+
+          <button  (click)="loc()"ion-button color="primary" clear item-end icon-start>
+            <ion-icon name='navigate'></ion-icon>
+            View Location
+          </button>
+          <ion-card *ngIf="isHidden" class="adv-map">
+            <div style="position: relative">
+              <div class="mapouter"><div class="gmap_canvas" id="map_canvas"><iframe width="300" height="249" id="gmap_canvas" src="https://maps.google.com/maps?q=zesa%20building%20harare&t=&z=13&ie=UTF8&iwloc=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+
+              </iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div><style>.mapouter{text-align:right;height:249px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:249px;width:300px;}</style></div>
+
+
+            </div>
+            <ion-item actions>
+
+              <button  ion-button color="primary" clear item-end icon-start>
+                <ion-icon name='navigate'></ion-icon>
+                Navigate
+              </button>
+            </ion-item>
+
+          </ion-card>
+
+        </div>
+        <div class="msg-content">
+          <span class="triangle"></span>
+          <p class="line-breaker ">{{msg.replied}}</p>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</ion-content>
+
+<ion-footer no-border [style.height]="showEmojiPicker ? '255px' : '55px'">
+  <ion-input type="hidden"[(ngModel)]="model.member" value="{{username}}"></ion-input>
+  <ion-input type="hidden"[(ngModel)]="model.time" value="{{dtt}}"></ion-input>
+  <ion-input type="hidden"[(ngModel)]="model.image" value="{{dp}}"></ion-input>
+
+  <ion-input type="hidden"[(ngModel)]="model.id" value="{{pid}}"></ion-input>
+  <ion-input type="hidden"[(ngModel)]="model.uid" value="{{userinfo.uid}}"></ion-input>
+
+  <div class="input-wrap">
+
+
+    <ion-textarea #chat_input
+              placeholder="Reply"
+              [(ngModel)]="model.replied"
+              (keyup.enter)="addocument(model)"
+              (focusin)="onFocus()">
+    </ion-textarea>
+
+
+    <button ion-button clear icon-only item-right (click)="addocument(model)" >
+      <ion-icon name="ios-send" ios="ios-send" md="md-send"></ion-icon>
+    </button>
+  </div>
+</ion-footer>

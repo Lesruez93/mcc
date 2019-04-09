@@ -1,0 +1,57 @@
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Edit Profile</ion-title>
+
+    <ion-buttons left>
+      <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal" color="danger">
+        <ion-icon name="close-circle" ></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="save()" class="my-style-for-modal" color="color-green">
+        <ion-icon name="checkmark-circle" ></ion-icon>
+      </button>
+    </ion-buttons>
+
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <div padding class="about-info">
+
+    <ion-list lines="none">
+
+      <ion-item>
+
+        <ion-label>First Name</ion-label>
+        <ion-input type="text" [(ngModel)]="name" placeholder="Name"></ion-input>
+      </ion-item>
+      <ion-item>
+      <ion-label>Last Name</ion-label>
+      <ion-input type="text" [(ngModel)]="surname" placeholder="Surname"></ion-input>
+
+      </ion-item>
+        <ion-item>
+          <ion-label>Phone Number</ion-label>
+          <ion-input type="text" [(ngModel)]="phone" placeholder="Surname"></ion-input>
+
+        </ion-item>
+
+      <ion-item>
+        <ion-label>Role</ion-label>
+        <ion-select type="text" [(ngModel)]="role" >
+          <ion-option value="Senior Technician">Senior Technician</ion-option>
+          <ion-option value="Junior Technician">Junior Technician</ion-option>
+
+        </ion-select>
+      </ion-item>
+
+<ion-item>
+      <button type="button" (click)="save()"  ion-button color="primary" block >Save</button>
+</ion-item>
+    </ion-list>
+
+
+  </div>
+</ion-content>

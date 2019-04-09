@@ -1,0 +1,27 @@
+.about-header {
+  background-color: #384880;
+  padding: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.about-header img {
+  border-radius: 100px;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.36);
+
+}
+
+.about-info p {
+  color: var(--ion-color-medium);
+  text-align: left;
+}
+
+.about-info ion-icon {
+  color: var(--ion-color-primary);
+}
+
+.ios .about-info {
+  text-align: center;
+}
