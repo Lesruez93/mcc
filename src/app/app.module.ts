@@ -27,6 +27,8 @@ import {InAppBrowser} from "@ionic-native/in-app-browser";
 import {FcmProvider} from "../providers/fcm/fcm";
 
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {Geolocation} from "@ionic-native/geolocation";
+import {ModalContentPage} from "../pages/faults/modal-content-page.component";
 
 
 const config = {
@@ -60,7 +62,7 @@ export function provideSettings(storage: Storage) {
 @NgModule({
   declarations: [
     MyApp,
-
+      ModalContentPage
 
 
   ],
@@ -72,6 +74,7 @@ export function provideSettings(storage: Storage) {
     AngularFireAuthModule,
       AngularFireStorageModule,
       AngularFireDatabaseModule,
+
       BrowserAnimationsModule,
       TranslateModule.forRoot({
       loader: {
@@ -93,7 +96,7 @@ export function provideSettings(storage: Storage) {
   entryComponents: [
     MyApp,
 
-
+      ModalContentPage
 
   ],
   providers: [
@@ -110,8 +113,7 @@ export function provideSettings(storage: Storage) {
             CallNumber,
             BrowserTab,
             HTTP,
-
-
+            Geolocation,
             FcmProvider,
 
 

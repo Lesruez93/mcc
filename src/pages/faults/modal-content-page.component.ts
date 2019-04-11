@@ -40,6 +40,8 @@ export class ModalContentPage {
     private location: any;
     private id: any;
     private data: any;
+    private lat: number;
+    private lon: number;
         constructor(
         public platform: Platform,
         private org: Api,
@@ -55,9 +57,11 @@ export class ModalContentPage {
 
             this.id = this.params.get('id');
                 this.data = this.params.get('data');
-            console.log(JSON.stringify(this.data));
+            this.lat = this.params.get('lat');
+            this.lon= this.params.get('lon');
+            console.log(this.lat+'  '+this.lon);
 
-            this.checkAuth()
+          //  this.checkAuth()
             this.loadData()
 
             this.sqlstorage.get('name').then((val) => {
@@ -96,29 +100,30 @@ export class ModalContentPage {
 
 
                 let content: any = {
-                    title: this.data.title,
-
+                    title: this.title,
                     id:this.pid,
                     date: this.dtt,
-                    location:this.data.location,
-                    message: this.data.message,
+                    location:this.location,
+                    message: this.message,
+                    lat:this.lat,
+                    lon:this.lon
 
-                }
-                const loader = this.loading.create({
+                };
+                console.log(content);
+
+     const loader = this.loading.create({
                     content: "Please wait...",
                     duration: 10000,
                 });
                 loader.present();
-                console.log(JSON.stringify(content));
                 loader.dismissAll();
                 this.dismiss();
 
 
-                this.orgRef.doc(this.id).update(content)
+                this.orgRef.add(content)
                     .then(() => {
 
                         //posting Data to Firebase database
-                        console.log(JSON.stringify(content))
                         loader.dismissAll();
                         this.dismiss();
                     }).catch((error: any) => {

@@ -13,6 +13,42 @@
     <p padding-left>From:  {{item.member}} </p>
     <p padding>{{item.message}} </p>
   </ion-card>
+
+  <ion-card class="adv-map">
+    <agm-map
+            [latitude]="item.lat"
+            [longitude]="item.lon"
+            [zoom]="zoom"
+            [disableDefaultUI]="false"
+            [zoomControl]="true"
+            (mapClick)="mapClicked($event)">
+
+      <agm-marker
+
+              [latitude]="item.lat"
+              [longitude]="item.lon"
+      >
+
+        <agm-info-window>
+          <strong>InfoWindow content</strong>
+        </agm-info-window>
+
+      </agm-marker>
+
+
+
+    </agm-map>
+    <ion-item actions>
+
+
+     <button  ion-button color="primary" clear item-end icon-start >
+       <ion-icon name='navigate'></ion-icon>
+       <a href="{{nav}}" target="_blank"  >
+         Navigate</a>
+   </button>
+    </ion-item>
+
+  </ion-card>
   <div class="message-wrap">
 
     <div *ngFor="let msg of reply |async"
@@ -29,27 +65,8 @@
             {{msg.time |amTimeAgo:'en' }}</p>
           <p>By:  Admin</p>
 
-          <button  (click)="loc()"ion-button color="primary" clear item-end icon-start>
-            <ion-icon name='navigate'></ion-icon>
-            View Location
-          </button>
-          <ion-card *ngIf="isHidden" class="adv-map">
-            <div style="position: relative">
-              <div class="mapouter"><div class="gmap_canvas" id="map_canvas"><iframe width="300" height="249" id="gmap_canvas" src="https://maps.google.com/maps?q=zesa%20building%20harare&t=&z=13&ie=UTF8&iwloc=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
-              </iframe><a href="https://www.crocothemes.net">crocothemes.net</a></div><style>.mapouter{text-align:right;height:249px;width:300px;}.gmap_canvas {overflow:hidden;background:none!important;height:249px;width:300px;}</style></div>
 
 
-            </div>
-            <ion-item actions>
-
-              <button  ion-button color="primary" clear item-end icon-start>
-                <ion-icon name='navigate'></ion-icon>
-                Navigate
-              </button>
-            </ion-item>
-
-          </ion-card>
 
         </div>
         <div class="msg-content">

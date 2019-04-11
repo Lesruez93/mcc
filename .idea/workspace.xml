@@ -70,6 +70,20 @@
       <change afterPath="$PROJECT_DIR$/client-app/src/providers/store/store.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client-app/src/providers/videos/notice-provider.ts" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client-app/src/providers/yt/yt.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/chat/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/chat/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/chat/chat.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/chat/chat.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/chat/chat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/chat/chat.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/chat/chat.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/chat/chat.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/faults.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/faults.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/modal-content-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/modal-content-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/modalcontent.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/modalcontent.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/faults/template.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/faults/template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/home/home.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/home/home.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -377,165 +391,175 @@
     <session id="1995969209">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.js.language.service.starts">
         <counts>
-          <entry key="TypeScriptServerServiceImpl" value="2" />
+          <entry key="TypeScriptServerServiceImpl" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="13" />
-          <entry key="json" value="1" />
+          <entry key="gitignore" value="1" />
+          <entry key="html" value="19" />
+          <entry key="json" value="3" />
           <entry key="png" value="1" />
-          <entry key="scss" value="8" />
-          <entry key="ts" value="17" />
+          <entry key="scss" value="10" />
+          <entry key="ts" value="25" />
+          <entry key="xml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="13" />
+          <entry key="HTML" value="19" />
           <entry key="Image" value="1" />
-          <entry key="JSON" value="1" />
-          <entry key="SCSS" value="8" />
-          <entry key="TypeScript" value="17" />
+          <entry key="JSON" value="3" />
+          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="SCSS" value="10" />
+          <entry key="TypeScript" value="25" />
+          <entry key="XML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="705" />
-          <entry key="json" value="1" />
-          <entry key="scss" value="53" />
-          <entry key="ts" value="343" />
+          <entry key="gitignore" value="12" />
+          <entry key="html" value="900" />
+          <entry key="json" value="3" />
+          <entry key="scss" value="65" />
+          <entry key="ts" value="1044" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="678" />
-          <entry key="JSON" value="1" />
+          <entry key="HTML" value="873" />
+          <entry key="JSON" value="3" />
           <entry key="JavaScript" value="27" />
-          <entry key="SCSS" value="53" />
-          <entry key="TypeScript" value="343" />
+          <entry key="PLAIN_TEXT" value="12" />
+          <entry key="SCSS" value="65" />
+          <entry key="TypeScript" value="1044" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+            <state relative-caret-position="828">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
               <folding>
+                <element signature="n#style#0;n#ion-icon#0;n#ion-buttons#0;n#ion-toolbar#0;n#ion-header#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ion-card#0;n#ion-col#0;n#ion-row#1;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ion-card#0;n#ion-col#1;n#ion-row#1;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
+        <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="874">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/faults/template.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="158">
-              <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+            <state relative-caret-position="225">
+              <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
               <folding>
-                <element signature="n#style#0;n#h2#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#ion-col#2;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#ion-col#3;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#ion-col#4;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#ion-col#6;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#button#0;n#ion-content#0;n#!!top" expanded="true" />
+                <element signature="e#0#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/pay/pay.html">
+        <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+            <state relative-caret-position="435">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/pay/pay.scss">
+        <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
+        <entry file="file://$PROJECT_DIR$/src/pages/faults/faults.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="178">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+            <state relative-caret-position="197">
+              <caret line="211" selection-start-line="211" selection-end-line="211" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/login/login.scss">
+        <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="25" selection-end-column="3" />
+            <state relative-caret-position="278">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
+              <folding>
+                <element signature="e#0#66#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.scss">
+        <entry file="file://$PROJECT_DIR$/src/pages/faults/modal-content-page.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="64">
+              <caret line="126" selection-start-line="126" selection-end-line="126" />
+              <folding>
+                <element signature="e#0#40#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-161">
+              <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/pages/faults/modalcontent.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="736">
+              <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -578,6 +602,7 @@
       <find>angularfi</find>
       <find>angularf</find>
       <find>pay</find>
+      <find>zesa</find>
     </findStrings>
     <replaceStrings>
       <replace>ProfileTabsPage</replace>
@@ -609,14 +634,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/pages/userprof/about.ts" />
-        <option value="$PROJECT_DIR$/src/pages/notices/notice-detail/notice-detail.html" />
         <option value="$PROJECT_DIR$/../BCC/functions/src/index.ts" />
         <option value="$PROJECT_DIR$/functions/src/index.ts" />
         <option value="$PROJECT_DIR$/src/pages/faults/tabs/about-tabs.html" />
         <option value="$PROJECT_DIR$/src/pages/faults/tabs/about-tabs.ts" />
-        <option value="$PROJECT_DIR$/src/pages/faults/chat/chat.module.ts" />
-        <option value="$PROJECT_DIR$/src/pages/faults/chat/chat.html" />
         <option value="$PROJECT_DIR$/src/pages/notices/template.html" />
         <option value="$PROJECT_DIR$/src/pages/notices/test.html" />
         <option value="$PROJECT_DIR$/src/pages/notices/test.css" />
@@ -628,7 +649,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/firebase.json" />
         <option value="$PROJECT_DIR$/.firebaserc" />
-        <option value="$PROJECT_DIR$/src/pages/faults/modalcontent.html" />
         <option value="$PROJECT_DIR$/src/pages/userprof/user.html" />
         <option value="$PROJECT_DIR$/src/pages/registration/complete.html" />
         <option value="$PROJECT_DIR$/src/pages/roles/roles.ts" />
@@ -641,25 +661,30 @@
         <option value="$PROJECT_DIR$/src/pages/roles/modal-roles-edit.component.ts" />
         <option value="$PROJECT_DIR$/src/app/app.html" />
         <option value="$PROJECT_DIR$/src/pages/reports/reports.ts" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/pages/registration/complete.ts" />
         <option value="$PROJECT_DIR$/src/pages/faults/styles.scss" />
         <option value="$PROJECT_DIR$/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/src/pages/login/login.ts" />
-        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/src/pages/faults/chat/chat.ts" />
-        <option value="$PROJECT_DIR$/src/pages/faults/modal-content-page.component.ts" />
         <option value="$PROJECT_DIR$/src/pages/pay/pay.scss" />
         <option value="$PROJECT_DIR$/src/pages/pay/pay.ts" />
         <option value="$PROJECT_DIR$/src/pages/pay/pay.html" />
-        <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
-        <option value="$PROJECT_DIR$/src/pages/faults/faults.ts" />
         <option value="$PROJECT_DIR$/src/pages/reports/reports.html" />
-        <option value="$PROJECT_DIR$/src/pages/faults/template.html" />
-        <option value="$PROJECT_DIR$/src/pages/login/login.html" />
         <option value="$PROJECT_DIR$/src/pages/home/home.scss" />
         <option value="$PROJECT_DIR$/src/theme/variables.scss" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/pages/login/login.html" />
+        <option value="$PROJECT_DIR$/src/pages/home/home.ts" />
+        <option value="$PROJECT_DIR$/src/pages/faults/faults.ts" />
+        <option value="$PROJECT_DIR$/src/pages/faults/template.html" />
+        <option value="$PROJECT_DIR$/src/pages/faults/modalcontent.html" />
+        <option value="$PROJECT_DIR$/src/pages/faults/modal-content-page.component.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/pages/home/home.html" />
+        <option value="$PROJECT_DIR$/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/src/pages/faults/chat/chat.module.ts" />
+        <option value="$PROJECT_DIR$/src/pages/faults/chat/chat.scss" />
+        <option value="$PROJECT_DIR$/src/pages/faults/chat/chat.html" />
+        <option value="$PROJECT_DIR$/src/pages/faults/chat/chat.ts" />
       </list>
     </option>
   </component>
@@ -676,7 +701,6 @@
     <handled-path value="$PROJECT_DIR$/client-app/node_modules" />
     <handled-path value="$PROJECT_DIR$/client-app/plugins/cordova-sqlite-storage/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
-    <handled-path value="$PROJECT_DIR$/plugins/cordova-sqlite-storage/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -716,46 +740,24 @@
       <path value="$PROJECT_DIR$/client-app/plugins/cordova-sqlite-storage/package.json" />
       <path value="$PROJECT_DIR$/client-app/plugins/es6-promise-plugin/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
-      <path value="$PROJECT_DIR$/plugins/call-number/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-advanced-http/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-browsertab/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-camera/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/ios/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-camera/tests/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-compat/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-device/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-device/tests/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-file/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-file/tests/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-firebase/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-geolocation/tests/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-googlemaps/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-inappbrowser/tests/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-ionic-keyboard/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-ionic-webview/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-nativestorage/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-network-information/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-network-information/tests/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-safariviewcontroller/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/tests/ios/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-splashscreen/tests/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-statusbar/tests/package.json" />
       <path value="$PROJECT_DIR$/plugins/cordova-plugin-whitelist/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-x-socialsharing/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-youtube-video-player/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-plugin-youtube-video-player/plugins/org.apache.cordova.console/package.json" />
-      <path value="$PROJECT_DIR$/plugins/cordova-sqlite-storage/package.json" />
-      <path value="$PROJECT_DIR$/plugins/es6-promise-plugin/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="20" />
     <option name="y" value="14" />
-    <option name="width" value="1318" />
+    <option name="width" value="1339" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -764,99 +766,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-              <item name="speakers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="faults" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="faults" type="462c0819:PsiDirectoryNode" />
-              <item name="chat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="pay" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="registration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
-              <item name="admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="reports" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -915,12 +824,62 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="faults" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="faults" type="462c0819:PsiDirectoryNode" />
+              <item name="chat" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="SearchEverywhereHistoryKey" value=".git&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/.gitignore&#10;var&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/theme/variables.scss&#10;log&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/login/login.html&#10;logi&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/login/login.html&#10;variab&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/theme/variables.scss&#10;vari&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/theme/variables.scss&#10;repo&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/reports/reports.html&#10;home&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/home/home.html&#10;hom&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/home/home.html&#10;pac&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/package.json&#10;app&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/app/app.module.ts&#10;lo&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/login/login.ts&#10;faul&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/faults/faults.ts&#10;reg&#9;null&#9;null&#10;reports&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/reports/reports.ts&#10;fault&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/pages/faults/faults.ts&#10;va&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/theme/variables.scss&#10;con&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/config.xml&#10;pack&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/package.json&#10;appMo&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/app/app.module.ts&#10;appM&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/app/app.module.ts&#10;ap&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/app/app.component.ts&#10;login&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/pages/login/login.html&#10;comp&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/pages/registration/complete.ts&#10;app.&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/app/app.component.ts&#10;compl&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/pages/registration/complete.ts&#10;goo&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/google-services.json&#10;conf&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/config.xml&#10;v&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/src/theme/variables.scss&#10;com&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/src/pages/registration/complete.ts&#10;go&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/google-services.json&#10;confi&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/config.xml&#10;api&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/providers/api/api.ts&#10;cell&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/cellgroups/cellgroup-detail/cell-detail.ts&#10;projectprov&#9;null&#9;null&#10;pled&#9;null&#9;null&#10;membe&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/providers/memberProf/members-prof.ts&#10;Pray&#9;null&#9;null&#10;giv&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/give/give.ts&#10;fcm&#9;null&#9;null&#10;eve&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/events-tabs/event-detail/event-detail.html&#10;give.ts&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/give/give.ts&#10;fun&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/providers/functions/functions.ts&#10;family&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/userprof/family-members/family-create.html&#10;vi&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/plugins/cordova-plugin-inappbrowser/tests/resources/video.html&#10;vide&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/videos/player/video-player.html&#10;varia&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/theme/variables.scss&#10;func&#9;null&#9;null&#10;contact&#9;null&#9;null&#10;comple&#9;FILE&#9;file://C:/Users/Lester/Desktop/BCC/src/pages/completeReg/complete.ts" />
+    <property name="SearchEverywhereHistoryKey" value="f&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/faults/faults.ts&#10;chat&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/faults/chat/chat.ts&#10;cha&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/faults/chat/chat.html&#10;home&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/home/home.html&#10;pac&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/package.json&#10;app&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/app/app.module.ts&#10;hom&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/home/home.ts&#10;log&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/login/login.html&#10;comple&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/registration/complete.ts&#10;report&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/reports/reports.html&#10;con&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/config.xml&#10;packa&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/package.json&#10;.git&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/.gitignore&#10;var&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/theme/variables.scss&#10;logi&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/login/login.html&#10;variab&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/theme/variables.scss&#10;vari&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/theme/variables.scss&#10;repo&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/reports/reports.html&#10;lo&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/login/login.ts&#10;faul&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/faults/faults.ts&#10;reg&#9;null&#9;null&#10;reports&#9;FILE&#9;file://C:/Users/lester/Desktop/admin/src/pages/reports/reports.ts&#10;fault&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/pages/faults/faults.ts&#10;va&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/theme/variables.scss&#10;pack&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/package.json&#10;appMo&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/app/app.module.ts&#10;appM&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/app/app.module.ts&#10;ap&#9;FILE&#9;file://C:/Users/Lester/Desktop/admin/src/app/app.component.ts&#10;login&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/pages/login/login.html&#10;comp&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/pages/registration/complete.ts&#10;app.&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/app/app.component.ts&#10;compl&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/src/pages/registration/complete.ts&#10;goo&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/google-services.json&#10;conf&#9;FILE&#9;file://C:/Users/Lester/Desktop/my App - Copy/config.xml&#10;v&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/src/theme/variables.scss&#10;com&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/src/pages/registration/complete.ts&#10;go&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/google-services.json&#10;confi&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa - Copy/config.xml&#10;api&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/providers/api/api.ts&#10;cell&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/cellgroups/cellgroup-detail/cell-detail.ts&#10;projectprov&#9;null&#9;null&#10;pled&#9;null&#9;null&#10;membe&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/providers/memberProf/members-prof.ts&#10;Pray&#9;null&#9;null&#10;giv&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/give/give.ts&#10;fcm&#9;null&#9;null&#10;eve&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/events-tabs/event-detail/event-detail.html&#10;give.ts&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/give/give.ts&#10;fun&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/providers/functions/functions.ts&#10;family&#9;FILE&#9;file://C:/Users/Lester/Desktop/mcaa/src/pages/userprof/family-members/family-create.html" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="excluded.www.directory" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1033,7 +992,10 @@
       <workItem from="1545043996980" duration="85000" />
       <workItem from="1546632580517" duration="168000" />
       <workItem from="1554668804532" duration="4507000" />
-      <workItem from="1554832125456" duration="9905000" />
+      <workItem from="1554832125456" duration="11233000" />
+      <workItem from="1554889946053" duration="17000" />
+      <workItem from="1554898729671" duration="8746000" />
+      <workItem from="1555013980421" duration="4947000" />
     </task>
     <task id="LOCAL-00001" summary="Added Platform Android">
       <created>1542359132049</created>
@@ -1046,7 +1008,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="280837000" />
+    <option name="totallyTimeSpent" value="295875000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1058,14 +1020,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info id="npm" order="1" side_tool="true" />
-      <window_info id="Project" order="2" visible="true" weight="0.27306548" />
+      <window_info id="Project" order="2" visible="true" weight="0.27455357" />
       <window_info id="Structure" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="0" weight="0.32861635" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.6179245" />
+      <window_info anchor="bottom" id="Terminal" order="1" weight="0.41037735" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="TODO" order="4" />
@@ -1095,30 +1058,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="933">
-          <caret line="58" column="14" selection-start-line="58" selection-start-column="14" selection-end-line="58" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/reports/limitpipe.ts" />
-    <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/functions/src/index.ts" />
-    <entry file="file://$PROJECT_DIR$/src/assets/icon/logo.png" />
     <entry file="file://$PROJECT_DIR$/.firebaserc" />
     <entry file="file://$PROJECT_DIR$/firebase.json" />
     <entry file="file://$PROJECT_DIR$/index.html">
@@ -1138,13 +1077,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/roles/roles.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="129" column="49" selection-start-line="129" selection-start-column="49" selection-end-line="129" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/roles/roles.ts" />
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1152,20 +1085,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/assign/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="67" selection-start-line="14" selection-start-column="67" selection-end-line="14" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/assign/assign-roles.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1931">
-          <caret line="115" column="5" selection-start-line="96" selection-end-line="115" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/assign/template.html" />
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/assign/assign-roles.ts" />
     <entry file="file://$PROJECT_DIR$/src/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -1173,49 +1094,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/roles/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="20" column="33" selection-start-line="20" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/roles/modaledit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/roles/modalroles.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="622">
-          <caret line="27" column="48" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/roles/modal-roles-page.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1515">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="29" selection-end-line="80" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/roles/modal-roles-edit.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/roles/template.html" />
+    <entry file="file://$PROJECT_DIR$/src/pages/roles/modaledit.html" />
+    <entry file="file://$PROJECT_DIR$/src/pages/roles/modalroles.html" />
+    <entry file="file://$PROJECT_DIR$/src/pages/roles/modal-roles-page.component.ts" />
+    <entry file="file://$PROJECT_DIR$/src/pages/roles/modal-roles-edit.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/pages/search/search.html" />
     <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="642">
           <caret line="34" column="37" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1226,59 +1114,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/modal-options.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-903">
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/registration/complete.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-826">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/modal-options.component.ts" />
     <entry file="file://$PROJECT_DIR$/src/providers/local-storage/local-storage.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/login/login.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1288">
           <caret line="1027" selection-start-line="1027" selection-end-line="1027" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-            <element signature="e#1120#25308#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="910">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
-          <folding>
-            <element signature="e#0#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="61" column="8" selection-start-line="61" selection-start-column="5" selection-end-line="61" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -1286,46 +1129,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="154" column="1" selection-start-line="154" selection-start-column="1" selection-end-line="154" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#52#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="69" selection-start-line="69" selection-end-line="69" />
-          <folding>
-            <element signature="e#0#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/modal-content-page.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1546">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/modalcontent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="37" column="13" lean-forward="true" selection-start-line="14" selection-end-line="37" selection-end-column="13" />
-          <folding>
-            <element signature="n#ion-list#0;n#ion-content#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="407">
-          <caret line="29" column="3" selection-start-line="14" selection-start-column="1" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -1333,29 +1136,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/faults.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="67" column="14" selection-start-line="67" selection-start-column="14" selection-end-line="67" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1366,91 +1146,200 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="24" column="48" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#ion-col#2;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#ion-col#3;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#ion-col#4;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#ion-col#6;n#ion-row#0;n#ion-grid#0;n#ion-card#0;n#div#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#ion-content#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/faults/template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/pay/pay.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/assets/img/speakers/profpic.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/pages/login/login.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="19" selection-start-column="1" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
+        <state relative-caret-position="206">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/theme/variables.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="735">
           <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/login.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="25" column="3" selection-start-line="19" selection-start-column="1" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="35" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/google-services.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="693" column="35" selection-start-line="693" selection-start-column="31" selection-end-line="693" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/pay/pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="73" column="25" selection-start-line="21" selection-start-column="11" selection-end-line="73" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/reports/reports.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/registration/complete.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="872">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="10" column="10" selection-start-line="10" selection-start-column="10" selection-end-line="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/home/home.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="29" column="3" selection-start-line="14" selection-start-column="1" selection-end-line="29" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/modalcontent.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/modal-content-page.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-161">
+          <caret line="56" column="25" selection-start-line="56" selection-start-column="25" selection-end-line="56" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#0#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/faults.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="211" selection-start-line="211" selection-end-line="211" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/pages/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
+        <state relative-caret-position="828">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
           <folding>
+            <element signature="n#style#0;n#ion-icon#0;n#ion-buttons#0;n#ion-toolbar#0;n#ion-header#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-card#0;n#ion-col#0;n#ion-row#1;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#0;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-card#0;n#ion-col#1;n#ion-row#1;n#ion-grid#0;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ion-icon#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#ion-card#0;n#ion-col#1;n#ion-row#0;n#ion-grid#1;n#ion-content#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/pages/faults/chat/chat.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#63#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -7,6 +7,7 @@ import {AngularFireAuth} from "angularfire2/auth";
 import {FcmProvider} from "../../../providers/fcm/fcm";
 import {Api} from "../../../providers/api/api";
 import {Storage} from "@ionic/storage";
+import {Geolocation} from "@ionic-native/geolocation";
 
 
 interface Reply {
@@ -17,12 +18,19 @@ interface Reply {
   messageId: string;
   userId: string;
   userName: string;
+
   userAvatar: string;
   toUserId: string;
 
+
   status: string;
 }
-
+interface marker {
+    lat: number;
+    lng: number;
+    label?: string;
+    draggable: boolean;
+}
 @IonicPage()
 @Component({
   selector: 'page-chat',
@@ -37,7 +45,9 @@ export class Chat {
   id: string;
   name?: string;
   avatar?: string;
-  messages: any;
+    zoom: number = 15;
+
+    messages: any;
   model: any = {};
   editorMsg = '';showEmojiPicker = false;
   private item: any;
@@ -51,6 +61,10 @@ export class Chat {
     private dp: any;
     private username: any;
     private isHidden: boolean = false;
+    private link: string;
+    private currentLat: number;
+    private currentLon: number;
+    private nav: string;
 
   constructor(navParams: NavParams,
               private navCtrl: NavController,
@@ -60,11 +74,26 @@ export class Chat {
 
               private churchname: Api,
               private sqlstorage: Storage,
+              public navigator: Geolocation
 
 
   ) {
     this.item = navParams.get('data') || "lil";
-    this.pId = this.item.docid;
+      this.pId = this.item.docid;
+
+      // this.link = "https://www.google.com/maps/@"+this.item.lat+","+this.item.lon+",15z?hl=en-US";
+
+    this.navigator.getCurrentPosition().then(resp=>{
+        this.currentLat = resp.coords.latitude;
+        this.currentLon = resp.coords.longitude;
+        this.nav = "https://www.google.com/maps/dir/"+this.currentLat+","+this.currentLon+"/"+this.item.lat
+            +","+this.item.lon+"/"+"@"+this.currentLat+","+this.currentLon +
+            ",9z/data=!3m1!4b1!4m9!4m8!1m3!2m2!1d30.995142!2d-17.8055188!1m3!2m2!1d31.99519!2d-18.805512";
+
+    }).catch(e=>{
+        console.log(e)
+    });
+
    // console.log("idddddd"+this.pId);
 
       this.loadData()
@@ -122,6 +151,7 @@ export class Chat {
 
   }
 
+
   ionViewWillLeave() {
     // unsubscribe
   }
@@ -134,7 +164,12 @@ export class Chat {
 
   }
 
-  onFocus() {
+
+
+
+
+
+onFocus() {
    // this.showEmojiPicker = false;
     this.content.resize();
     this.scrollToBottom();

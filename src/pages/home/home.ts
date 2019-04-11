@@ -10,6 +10,9 @@ import {IonicPage, ModalController, NavController} from 'ionic-angular';
 
 })
 export class HomePage {
+    private lon: number;
+    private lat: number;
+    private error: any;
 
 
   constructor(public navCtrl: NavController,
@@ -17,6 +20,10 @@ export class HomePage {
 
   ) {
 
+
+
+  }
+  ionViewDidLoad(){
   }
 
   pay() {
@@ -28,7 +35,12 @@ export class HomePage {
   }
 
   gotoFaults(){
-      this.navCtrl.push('FaultsPage')
+      this.navCtrl.push('FaultsPage',{
+          lat:this.lat,
+          lon:this.lon
+      })
   }
+
+
 
 }
