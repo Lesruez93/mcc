@@ -5,7 +5,7 @@ import {
     LoadingController,
     MenuController,
     ModalController,
-    NavController
+    NavController, NavParams
 } from "ionic-angular";
 import {AngularFireAuth} from "angularfire2/auth";
 import {AngularFirestore, AngularFirestoreCollection} from "angularfire2/firestore";
@@ -13,73 +13,77 @@ import {Observable} from "rxjs-compat";
 import * as moment from "moment"
 import {Api} from "../../providers/api/api";
 import {ModalContentPage} from "./modal-content-page.component";
+import {Geolocation} from "@ionic-native/geolocation";
 
 interface Faults {
-  docid: string;
-  title: string,
-  message: string,
-  time: number | string;
+    docid: string;
+    title: string,
+    message: string,
+    time: number | string;
 }
 
 @IonicPage()
 
 @Component({
-  selector: 'faults-page',
+    selector: 'faults-page',
 
-  templateUrl: 'template.html'
+    templateUrl: 'template.html'
 
 })
 export class FaultsPage {
-  messages: any;
-  private db: any;
-  model: any = {};
-  isEditing: boolean = false;
- faults: Observable<Faults[]>;
-  faultsRef: AngularFirestoreCollection<Faults>;
+    messages: any;
+    private db: any;
+    model: any = {};
+    isEditing: boolean = false;
+    faults: Observable<Faults[]>;
+    faultsRef: AngularFirestoreCollection<Faults>;
 
-   private dtt = moment().format('YYYY-MM-DD HH:m:s');
+    private dtt = moment().format('YYYY-MM-DD HH:m:s');
     private uid: any;
     private ftype: any = 'Domestic';
+    private lat: number;
+    private lon: number;
 
-  constructor(public navCtrl: NavController,
-              public loading:LoadingController,
-              public modalCtrl: ModalController,
-              public afAuth: AngularFireAuth,
-             private menu:MenuController,
-             public afs: AngularFirestore,
-              private churchname: Api,
-              private actionSheet:ActionSheetController,
-              private alertCtrl:AlertController
+    constructor(public navCtrl: NavController,
+                public loading:LoadingController,
+                public modalCtrl: ModalController,
+                public afAuth: AngularFireAuth,
+                private menu:MenuController,
+                public afs: AngularFirestore,
+                public geolocation:Geolocation,
+
+                private churchname: Api,
+                private actionSheet:ActionSheetController,
+                private alertCtrl:AlertController,
+                private navParams:NavParams
 
 
-)
+    )
 
-  {
-this.checkAuth()
+    {
+        this.loadCoord();
+        this.loadData();
 
-    this.loadData();
-this.menu.enable(true)
-
-  }
-  loadData(){
-    this.faultsRef = this.afs.
-    collection("faults",ref =>
-        ref
+    }
+    loadData(){
+        this.faultsRef = this.afs.
+        collection("faults",ref =>
+            ref
             //.where('type','==',this.ftype)
 
-        .orderBy("id","desc",));
-    //this.faults = this.faultsRef.valueChanges();
-    this.faults = this.faultsRef.snapshotChanges().map
-    (changes => {
-      return changes.map(
-        a => {
-          const data = a.payload.doc.data() as Faults;
-          data.docid = a.payload.doc.id;
-          return data
-        }
-      )
-    }) ;
-  }
+                .orderBy("id","desc",));
+        //this.faults = this.faultsRef.valueChanges();
+        this.faults = this.faultsRef.snapshotChanges().map
+        (changes => {
+            return changes.map(
+                a => {
+                    const data = a.payload.doc.data() as Faults;
+                    data.docid = a.payload.doc.id;
+                    return data
+                }
+            )
+        }) ;
+    }
 
 
     checkAuth () {
@@ -94,106 +98,116 @@ this.menu.enable(true)
         });
     }
 
+    async  loadCoord()
+    {
+
+        await  this.geolocation.getCurrentPosition().then(res=>{
+            this.lat= res.coords.latitude;
+            this.lon = res.coords.longitude;
+            console.log("sjjsjs",this.lon);
+        }).catch(e=>{
+            console.log(e);
+        })
+    }
 
 
 
 
+    goToFaults(prayerId) {
+        this.navCtrl.push('Chat', {
 
-  goToFaults(prayerId) {
-      this.navCtrl.push('Chat', {
-
-          data: prayerId,
-
+                data: prayerId,
 
 
-      }
 
-      );
-      console.log(prayerId)
-  }
+            }
 
-      presentAction(id) {
-          const actionSheet = this.actionSheet.create({
-              title: 'Action',
-              buttons: [
-                  {
-                      text: 'Assign',
+        );
+        console.log(prayerId)
+    }
 
-                      handler: () => {
-                         // this.openModal(id)
-                      }
-                  },{
-                      text: 'View or Reply',
-                      handler: () => {
-                          this.goToFaults(id)
+    presentAction(id) {
+        const actionSheet = this.actionSheet.create({
+            title: 'Action',
+            buttons: [
+                {
+                    text: 'Assign',
 
-                      }
-                  },
-                  {
-                      text: 'Resolved',
-                      handler: () => {
-                          this.resolved(id)
+                    handler: () => {
+                        // this.openModal(id)
+                    }
+                },{
+                    text: 'View or Reply',
+                    handler: () => {
+                        this.goToFaults(id)
 
-                      }
-                  }
-                  ,
-                  {
-                      text: 'Edit',
-                      handler: () => {
-                          this.edit(id)
+                    }
+                },
+                {
+                    text: 'Resolved',
+                    handler: () => {
+                        this.resolved(id)
 
-                      }
-                  },
-                  {
-                      text: 'Cancel',
-                      role: 'cancel',
-                      handler: () => {
-                          console.log('Cancel clicked');
-                      }
-                  }
-              ]
-          });
-          actionSheet.present();
-      }
+                    }
+                }
+                ,
+                {
+                    text: 'Edit',
+                    handler: () => {
+                        this.edit(id)
+
+                    }
+                },
+                {
+                    text: 'Cancel',
+                    role: 'cancel',
+                    handler: () => {
+                        console.log('Cancel clicked');
+                    }
+                }
+            ]
+        });
+        actionSheet.present();
+    }
 
 
     private resolved(id: any) {
-      if (id.status == "Pending")
-      {
-          let alertt: Alert = this.alertCtrl.create({
-              title: 'Resolve a pending unassigned issue ? ',
+        if (id.status == "Pending")
+        {
+            let alertt: Alert = this.alertCtrl.create({
+                title: 'Resolve a pending unassigned issue ? ',
 
-              buttons: [{
-                  text: 'Cancel',
-                  role: 'cancel',
+                buttons: [{
+                    text: 'Cancel',
+                    role: 'cancel',
 
-              },
-                  {
-                      text:'Okay',handler: data =>{
-                          let updateData ={
-                              'status':'Resolved',
-                              'to':'Resolved without being assigned by Admin'
-                          }
-                          const fault = this.afs.collection("faults").doc(id.docid);
-                          fault.update(updateData)
+                },
+                    {
+                        text:'Okay',handler: data =>{
+                            let updateData ={
+                                'status':'Resolved',
+                                'to':'Resolved without being assigned by Admin'
+                            }
+                            const fault = this.afs.collection("faults").doc(id.docid);
+                            fault.update(updateData)
 
-                      }
-                  }],
+                        }
+                    }],
 
-          });
-          alertt.present();
-      }else {
-          let updateData ={
-              'status':'Resolved',
+            });
+            alertt.present();
+        }else {
+            let updateData ={
+                'status':'Resolved',
 
-          }
-          const fault = this.afs.collection("faults").doc(id.docid);
-          fault.update(updateData)
+            }
+            const fault = this.afs.collection("faults").doc(id.docid);
+            fault.update(updateData)
 
-      }
+        }
 
 
-}
+    }
 
 
     private edit(id: any) {
@@ -203,6 +217,16 @@ this.menu.enable(true)
         });
         modal.present();
     }
+
+
+    addFault(){
+        let modal = this.modalCtrl.create(ModalContentPage,{
+            lat:this.lat,
+            lon:this.lon
+        });
+        modal.present();
+    }
+
 }
 
 
