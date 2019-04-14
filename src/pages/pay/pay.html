@@ -6,9 +6,14 @@
 -->
 <ion-header>
 
-  <ion-navbar color="primary">
+  <ion-toolbar color="primary">
     <ion-title text-center>Pay</ion-title>
-  </ion-navbar>
+    <ion-buttons right="">
+      <button ion-button icon-only (click)="viewCtrl.dismiss()" class="my-style-for-modal">
+        <ion-icon name="ios-close-circle" color="danger" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
 
 </ion-header>
 

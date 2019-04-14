@@ -2,7 +2,6 @@
 
     <ion-toolbar color="primary">
         <ion-title text-center>Mutare City Council</ion-title>
-        <ion-buttons end=""><ion-icon name="power" style="font-size: 25px"  color="danger"></ion-icon></ion-buttons>
     </ion-toolbar>
 
 </ion-header>
@@ -36,7 +35,7 @@
     <ion-grid>
     <ion-row>
         <ion-col >
-            <ion-card (click)="pay()" style="background-color: #253a70">
+            <ion-card navPush="PaymentHistoryPage" style="background-color: #253a70">
                 <div padding="" text-center="">
                     <ion-icon name="ios-paper-outline" color="gry" style="font-size: 50px"></ion-icon>
 
@@ -44,7 +43,7 @@
             </ion-card>
         </ion-col>
         <ion-col >
-            <ion-card (click)="gotoFaults()"style="background-color: #3dffb3">
+            <ion-card style="background-color: #3dffb3">
 
 
                 <div padding="" text-center="">

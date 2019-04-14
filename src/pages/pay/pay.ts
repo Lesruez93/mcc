@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {IonicPage, LoadingController, NavController, NavParams} from 'ionic-angular';
+import {IonicPage, LoadingController, NavController, NavParams, ViewController} from 'ionic-angular';
 import * as moment from "moment";
 import {AngularFirestore, AngularFirestoreCollection} from "angularfire2/firestore";
 declare var require :any;
@@ -30,82 +30,89 @@ export class PayPage {
 
     private number: any;
     private user: any = 'Lester';
+    private address: any;
 
   constructor(public navCtrl: NavController,
               public afs: AngularFirestore,
+              public viewCtrl:ViewController,
 
               public loading:LoadingController,
               public navParams: NavParams) {
 
-      this.orgRef = this.afs.collection("faults");
+      this.orgRef = this.afs.collection("payments");
   }
 
               ionViewDidLoad() {
                 console.log('ionViewDidLoad PayPage');
               }
 
-  pay(){
-      const Paynow = require("paynow");
-      let testIntegrationId = '4198';
-      let testIntegrationKey = '5c74798d-f9b0-42e0-9a61-a48138a7189c';
-      let paynow = new Paynow(testIntegrationId, testIntegrationKey);
+                      pay(){
+                          const Paynow = require("paynow");
+                          let testIntegrationId = '4198';
+                          let testIntegrationKey = '5c74798d-f9b0-42e0-9a61-a48138a7189c';
+                          let paynow = new Paynow(testIntegrationId, testIntegrationKey);
 
 
-      paynow.resultUrl = "http://example.com/gateways/paynow/update";
-      paynow.returnUrl = "http://example.com/return?gateway=paynow";
-      let payment = paynow.createPayment("Invoice 007", "lesterrusike@gmail.com");
-      payment.add("Bii", this.amount);
+                          paynow.resultUrl = "http://example.com/gateways/paynow/update";
+                          paynow.returnUrl = "http://example.com/return?gateway=paynow";
+                          let payment = paynow.createPayment("Invoice 007", "lesterrusike@gmail.com");
+                          payment.add("Bii", this.amount);
 
-      paynow.sendMobile(payment,this.number,'ecocash').then(response => {
-          if (response.success) {
-              let link = response.redirectUrl;
-              console.log('Go to ' + link + ' to complete the transaction.');
-              console.log(response.pollUrl)
-          }
-          else {
-              console.log(response.error);
-          }
-      });
+                          paynow.sendMobile(payment,this.number,'ecocash').then(response => {
+                              if (response.success) {
+                                  let link = response.redirectUrl;
+                                  console.log('Go to ' + link + ' to complete the transaction.');
+                                  console.log(response.pollUrl)
+                              }
+                              else {
+                                  console.log(response.error);
+                              }
+                          });
 
-  }
-
-
-
-    async makePayment() {
+                      }
 
 
-        let content: any = {
-            amount: this.amount,
-            id:this.pid,
-            date: this.dtt,
-            address:this.data.address,
-            user: this.user,
-            number: this.number
 
-        };
-        const loader = this.loading.create({
-            content: "Please wait...",
-            duration: 10000,
-        });
-        loader.present();
-        console.log(JSON.stringify(content));
-        loader.dismissAll();
-        this.dismiss();
+                        async makePayment() {
 
 
-        this.orgRef.add(content)
-            .then(() => {
+                            let content: any = {
+                                amount: this.amount,
+                                id:this.pid,
+                                date: this.dtt,
+                                address:this.address,
+                                user: this.user,
+                                number: this.number
 
-                //posting Data to Firebase database
-                loader.dismissAll();
-                this.dismiss();
-            }).catch((error: any) => {
-            console.log(error);
-            loader.dismissAll();
-            this.dismiss();
-        });
-    }
+                            };
+                            const loader = this.loading.create({
+                                content: "Please wait...",
+                                duration: 10000,
+                            });
+                            loader.present();
+                            console.log(JSON.stringify(content));
+                            loader.dismissAll();
+                            this.dismiss();
+
+
+                            this.orgRef.add(content)
+                                .then(() => {
+
+                                    //posting Data to Firebase database
+                                    loader.dismissAll();
+                                    this.dismiss();
+                                }).catch((error: any) => {
+                                console.log(error);
+                                loader.dismissAll();
+                                this.dismiss();
+                            });
+                        }
+
+
+
     dismiss(){
+      console.log('lslslslslslslsldclicked');
+      this.viewCtrl.dismiss()
 
     }
 
