@@ -9,10 +9,7 @@ import {Storage} from "@ionic/storage";
 
 interface Faults {
     docid: string;
-  id: string;
-  title: string,
-  message: string,
-  pid: number
+
 
 }
 
@@ -23,15 +20,15 @@ interface Faults {
 })
 export class ModalContentPage {
 
-        private db: any;
-        model: any = {};
-  private dtt = moment().format('YYYY-MM-DD HH:mm');
-  pid = Date.now();
+    private db: any;
+    model: any = {};
+    private dtt = moment().format('YYYY-MM-DD HH:mm');
+    pid = Date.now();
 
 
-        private messages: any;
-        faults: Observable<Faults[]>;
-        orgRef: AngularFirestoreCollection<Faults>;
+    private messages: any;
+    faults: Observable<Faults[]>;
+    orgRef: AngularFirestoreCollection<Faults>;
     private uid: string;
     private title: any;
     private message: string;
@@ -40,16 +37,17 @@ export class ModalContentPage {
     private location: any;
     private id: any;
     private data: any;
+
         constructor(
-        public platform: Platform,
-        private org: Api,
-        private navCtrl: NavController,
-      public params: NavParams,
-        public viewCtrl: ViewController,
-        public loading:LoadingController,
-        public afAuth: AngularFireAuth,
-        public afs: AngularFirestore,
-        private sqlstorage:Storage
+                    public platform: Platform,
+                    private org: Api,
+                    private navCtrl: NavController,
+                    public params: NavParams,
+                    public viewCtrl: ViewController,
+                    public loading:LoadingController,
+                    public afAuth: AngularFireAuth,
+                    public afs: AngularFirestore,
+                    private sqlstorage:Storage
 
 ) {
 
@@ -92,6 +90,8 @@ export class ModalContentPage {
 
             } });
     }
+
+
  async saveData() {
 
 
@@ -114,7 +114,7 @@ export class ModalContentPage {
                 this.dismiss();
 
 
-                this.orgRef.doc(this.id).update(content)
+                this.orgRef.add(content)
                     .then(() => {
 
                         //posting Data to Firebase database

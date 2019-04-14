@@ -19,7 +19,7 @@
   <ion-list>
 
     <ion-list-header>Recent</ion-list-header>
-      <ion-item *ngFor="let fault of faults | async" (click)="presentAction(fault)">
+      <ion-item *ngFor="let fault of faults | async" (click)="goToFaults(fault)">
       <ion-avatar item-start >
         <img *ngIf="fault.image"   src="{{fault.image}}">
         <img  *ngIf="!fault.image"  src="./assets/img/speakers/profpic.png">
