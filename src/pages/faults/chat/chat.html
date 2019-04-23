@@ -13,15 +13,17 @@
     <p padding-left>From:  {{item.member}} </p>
     <p padding>{{item.message}} </p>
   </ion-card>
+  <ion-card>
 
-  <ion-card class="adv-map">
+  </ion-card>
+      <img margin="" src="item.dp" class="box">
+  <ion-card margin="" class="adv-map">
     <agm-map
             [latitude]="item.lat"
             [longitude]="item.lon"
             [zoom]="zoom"
             [disableDefaultUI]="false"
-            [zoomControl]="true"
-            (mapClick)="mapClicked($event)">
+            [zoomControl]="true">
 
       <agm-marker
 
@@ -29,9 +31,7 @@
               [longitude]="item.lon"
       >
 
-        <agm-info-window>
-          <strong>InfoWindow content</strong>
-        </agm-info-window>
+
 
       </agm-marker>
 

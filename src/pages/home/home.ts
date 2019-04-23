@@ -26,13 +26,13 @@ export class HomePage {
   ionViewDidLoad(){
   }
 
-  pay() {
-
-      let md = this.modalCtrl.create('PayPage');
-      md.present()
-
-
-  }
+  // pay() {
+  //
+  //     let md = this.modalCtrl.create('PaymentHistoryPage');
+  //     md.present()
+  //
+  //
+  // }
 
   gotoFaults(){
       this.navCtrl.push('FaultsPage',{

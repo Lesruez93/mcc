@@ -23,8 +23,7 @@ export class MyApp {
 
     pages: any[] = [
         {title: 'Home', component: 'AboutTabsPage', icon: 'ios-home-outline'},
-        {title: 'Devotions', component: 'DevotionsPage', icon: 'ios-contact-outline'},
-        {title: 'Videos', component: 'LivestreamPage', icon: 'logo-youtube'},
+        {title: 'Reports', component: 'DevotionsPage', icon: 'ios-contact-outline'},
 
         {title: 'Settings', icon: 'ios-settings-outline'}
 
