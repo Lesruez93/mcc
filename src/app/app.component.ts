@@ -44,6 +44,7 @@ export class MyApp {
 
 
         platform.ready().then(() => {
+
             // this.menu.swipeEnable(false)
 
             // this.storage.get('login').then((val) => {
@@ -51,12 +52,12 @@ export class MyApp {
             //     this.afs.authState.subscribe(res => {
             //
             //
-            //         if (res && res.uid && this.logged == 'true') {
+            //         if (res && res.uid ) {
             //             this.rootPage = Home;
             //             this.uid = res.uid;
             //         }
             //         else {
-            //             this.rootPage = Home
+            //             this.rootPage = Login
             //
             //         }
             //     })
@@ -64,7 +65,7 @@ export class MyApp {
             // //  func.sync()
             // Get a FCM token
             fcm.getToken()
-            fcm.subscribeToTopic(this.churchname.churchname).catch(err => {
+            fcm.subscribeToTopic('faults').catch(err => {
 
             });
 
@@ -103,7 +104,7 @@ export class MyApp {
 
         });
         statusBar.styleDefault();
-        this.statusBar.backgroundColorByHexString('#f2af37')
+        this.statusBar.backgroundColorByHexString('#6ad3f2')
         this.initTranslate();
 
 

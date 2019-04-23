@@ -2,20 +2,28 @@
 <ion-header class="header">
   <ion-navbar color="primary">
 
-    <ion-buttons>
-      <ion-title medium>&nbsp; &nbsp; Faults</ion-title>
+    <ion-buttons item-start="">
+      <ion-title item-start="" medium>&nbsp; &nbsp; Faults</ion-title>
+
     </ion-buttons>
 
 
-  </ion-navbar>
+  </ion-navbar >
+
+
 </ion-header>
 
 <ion-content class="list-avatar-page">
-<ion-select color="danger" [(ngModel)]="ftype" (ionChange)="loadData()">
-  <ion-option value="CBD" selected>CBD</ion-option>
-  <ion-option value="dangamvura">Dangamvura</ion-option>
-</ion-select>
+  <div text-center="">
+    <ion-select margin-left="" placeholder="Filter Locations" [(ngModel)]="ftype" (ionChange)="filter()">
+      <ion-option value="CBD" selected>CBD</ion-option>
+      <ion-option value="Dangamvura">Dangamvura</ion-option>
+      <ion-option value="Chikanga">Chikanga</ion-option>
+      <ion-option value="Sakubva">Sakubva</ion-option>
 
+
+    </ion-select>
+  </div>
   <ion-list>
 
     <ion-list-header>Recent</ion-list-header>
@@ -29,9 +37,11 @@
         <p padding-top>Location: {{fault.location}}</p>
       <p>From:  {{fault.member}}</p>
 
-      <ion-note item-end>{{fault.date | amTimeAgo:'en'}} ago</ion-note>
-        <ion-note color="color-green" item-end>{{fault.status}}</ion-note>
-    </ion-item>
+          <ion-note item-end>{{fault.date | amTimeAgo:'en'}} ago</ion-note>
+
+          <div text-center=""> <ion-note color="color-green" >{{fault.status}}</ion-note></div>
+
+      </ion-item>
 
 
 

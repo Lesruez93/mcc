@@ -20,7 +20,6 @@ interface Reg {
 
     uid:string,
     phone:string,
-   role:string,
 }
 
 @Component({
@@ -66,6 +65,7 @@ export class ModalComplete {
       this.phone = params.get('phone');
 
           this.usersCollectionRef = this.afs.collection("admin");
+          // Firebase Database collection reference
 
 
 
@@ -87,15 +87,16 @@ async save(){
         first_name:this.name,
         last_name:this.surname,
         uid: this.uid,
-        phone: this.phone|| 'Null',
-        role:this.role,
+            phone: this.phone|| 'Null',
+       // role:this.role,
     }
+    //posting Data to Firebase database
 
     this.usersCollectionRef.add(postData)
         .then(() => {
 
-            //posting Data to Firebase database
-            this.storage.set('adminuser',postData);
+            this.storage.set('user',postData);
+            //Adding User data to sqlite database .. for future use
 
             console.log(postData);
             this.goToHome();
@@ -143,18 +144,9 @@ async save(){
   goToHome(){
       this.storage.set('login', 'true');
       this.storage.set('name',this.fullname);
-      this.navCtrl.push('FaultsPage',
+      //Go to homepage after completing registration
+      this.navCtrl.push('HomePage',
 
-          {
-              uid:this.uid,
-              //bid: this.branch_id,
-              refresh:'true',
-
-      },{
-              direction: "forward",
-              animate:true,
-
-          }
 
 
       )

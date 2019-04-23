@@ -40,6 +40,7 @@ export class PaymentHistoryPage {
 
 
     loadData(){
+        //Querying Payment History from the Firebase database
         this.paymentsRef = this.afs.
         collection("payments",ref =>
             ref

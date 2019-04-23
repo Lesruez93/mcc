@@ -1,0 +1,82 @@
+
+<ion-header>
+  <div class="about-header "  (click)="changePicture()">
+
+    <img   [src]="dp" onError="this.src='./assets/img/speakers/profpic.png';"/>
+
+  </div>
+</ion-header>
+<ion-content padding-left padding-right class="about-info">
+
+  <ion-item text-center>
+    <h4>Acc Balance: </h4>
+  </ion-item>
+
+
+  <ion-grid >
+
+    <ion-row>
+      <ion-col col-5>
+
+        <ion-label>First Name</ion-label>
+      </ion-col>
+      <ion-col col-1>
+        <ion-label> : </ion-label>
+      </ion-col>
+      <ion-col col-6>
+
+        <ion-label>{{userinfo?.first_name}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-5>
+        <ion-label>Last Name</ion-label>
+      </ion-col>
+      <ion-col col-1>
+        <ion-label> : </ion-label>
+      </ion-col>
+      <ion-col col-6>
+        <ion-label>{{userinfo?.last_name}}</ion-label>
+
+      </ion-col>
+    </ion-row>
+
+
+
+
+    <ion-row>
+      <ion-col col-5>
+        <ion-label>Address</ion-label>
+      </ion-col>
+      <ion-col col-1>
+        <ion-label> : </ion-label>
+      </ion-col>
+      <ion-col col-6>
+        <ion-label>{{userinfo?.address}}</ion-label>
+        <!--<ion-input hidden type="text" [(ngModel)]="userinfo.prof_pic" value="{{dp}}"></ion-input>-->
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row>
+      <ion-col col-5>
+        <ion-label>Phone Number</ion-label>
+      </ion-col>
+      <ion-col col-1>
+        <ion-label> : </ion-label>
+      </ion-col>
+      <ion-col col-6>
+        <ion-label> {{userinfo?.cell_number}}</ion-label>
+      </ion-col>
+    </ion-row>
+
+
+
+  </ion-grid>
+
+
+
+
+</ion-content>

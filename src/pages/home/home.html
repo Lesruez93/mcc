@@ -6,9 +6,10 @@
 
 </ion-header>
 
-<
+
     <ion-content padding="" >
-        <div text-center=""> <img src="../assets/img/logo.png"class=" cover" ></div>
+        <div text-center="">
+        <img   [src]="dlp" class="cover" onError="this.src='.../../assets/img/logo.png';"/></div>
 
     <ion-grid>
     <ion-row>
@@ -43,7 +44,7 @@
             </ion-card>
         </ion-col>
         <ion-col >
-            <ion-card style="background-color: #3dffb3">
+            <ion-card style="background-color: #3dffb3" navPush="ProfilePage">
 
 
                 <div padding="" text-center="">

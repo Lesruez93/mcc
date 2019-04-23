@@ -15,20 +15,37 @@
   <ion-list class="bc">
     <ion-item>
       <ion-label stacked text-center color="secondary">Title</ion-label>
-      <ion-input padding-left class="form-control"type="text" [(ngModel)]="title" required="true" placeholder="Title"  style="border:1px solid #50c439"></ion-input>
+      <ion-input padding-left class="form-control"type="text" [(ngModel)]="title" required="true" placeholder="Title"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label stacked text-center color="secondary">Location</ion-label>
-      <ion-input padding-left class="form-control" type="text" [(ngModel)]="location" required="true" placeholder="location"  style="border:1px solid #50c439"></ion-input>
+      <ion-select padding-left="" placeholder="Please Select" class="form-control" color="danger" [(ngModel)]="location" >
+        <ion-option value="CBD" >CBD</ion-option>
+        <ion-option value="Dangamvura">Dangamvura</ion-option>
+        <ion-option value="Chikanga">Chikanga</ion-option>
+        <ion-option value="Sakubva">Sakubva</ion-option>
+
+
+      </ion-select>
     </ion-item>
 
     <ion-item>
       <ion-label stacked text-center color="secondary">Message</ion-label>
-      <ion-textarea padding-left class="form-control" type="text" row="10" [(ngModel)]="message" placeholder="Message" required="true"  style="border:1px solid #50c439"></ion-textarea>
+      <ion-textarea padding-left class="form-control" type="text" row="10" [(ngModel)]="message"
+                    placeholder="Message" required="true"  ></ion-textarea>
 
     </ion-item>
     <ion-item>
+
+      <ion-card text-center=""padding="">   
+        <button small (click)="changePicture()"  ion-button color="primary" >
+          <ion-icon item-start="" color="lt" name="camera"></ion-icon>
+
+          Upload.....
+        </button>
+        <img src="{{dp}}">
+      </ion-card>
 
     <button type="button" (click)="saveData()"  ion-button color="primary" block >Save</button>
       </ion-item>

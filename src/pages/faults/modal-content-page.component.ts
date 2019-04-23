@@ -1,11 +1,19 @@
 import {Component} from "@angular/core";
-import {LoadingController, NavController, NavParams, Platform, ViewController} from "ionic-angular";
+import {
+    ActionSheetController,
+    LoadingController,
+    NavController,
+    NavParams,
+    Platform,
+    ViewController
+} from "ionic-angular";
 import {AngularFireAuth} from "angularfire2/auth";
 import {AngularFirestore, AngularFirestoreCollection} from "angularfire2/firestore";
 import {Observable} from "rxjs-compat";
 import * as moment from "moment";
 import {Api} from "../../providers/api/api";
 import {Storage} from "@ionic/storage";
+import {CameraProvider} from "../../providers/camera/camera";
 
 interface Faults {
     docid: string;
@@ -42,8 +50,12 @@ export class ModalContentPage {
     private data: any;
     private lat: number;
     private lon: number;
+    private dp: string;
     constructor(
         public platform: Platform,
+        private actionsheetCtrl:ActionSheetController,
+        private cameraProvider:CameraProvider,
+        private loadingCtrl:LoadingController,
         private org: Api,
         private navCtrl: NavController,
         public params: NavParams,
@@ -62,7 +74,7 @@ export class ModalContentPage {
         console.log(this.lat+'  '+this.lon);
 
         //  this.checkAuth()
-        this.loadData()
+        this.loadData();
 
         this.sqlstorage.get('name').then((val) => {
             this.username = val
@@ -88,7 +100,8 @@ export class ModalContentPage {
 
     }
 
-    async checkAuth () {
+    async checkAuth ()
+    {
         //Checking if the the user is authentication
         this.afAuth.authState.subscribe(res => {
             if (res && res.uid) {
@@ -97,19 +110,23 @@ export class ModalContentPage {
             } });
     }
     async saveData() {
-
+       //Adding a fault
+        // the following data is posted to the Firebase DATABASE
 
         let content: any = {
             title: this.title,
             id:this.pid,
             date: this.dtt,
+            dp:this.dp||null,
             location:this.location,
+            status:'Pending',
             message: this.message,
             lat:this.lat,
-            lon:this.lon
+            lon:this.lon,
+            member:"Lester"
 
         };
-        console.log(content);
+        console.log(JSON.stringify(content));
 
         const loader = this.loading.create({
             content: "Please wait...",
@@ -139,4 +156,69 @@ export class ModalContentPage {
         this.viewCtrl.dismiss();
         // dismissing the modal
     }
+
+
+
+    changePicture() {
+        // Uploading a a picture
+
+        const actionsheet = this.actionsheetCtrl.create({
+            title: 'upload picture',
+            buttons: [
+                {
+                    text: 'camera',
+                    icon: !this.platform.is('ios') ? 'camera' : null,
+                    handler: () => {
+                        this.takePicture();
+                    }
+                },
+                {
+                    text: !this.platform.is('ios') ? 'gallery' : 'camera roll',
+                    icon: !this.platform.is('ios') ? 'image' : null,
+                    handler: () => {
+                        this.getPicture();
+                    }
+                },
+                {
+                    text: 'cancel',
+                    icon: !this.platform.is('ios') ? 'close' : null,
+                    role: 'destructive',
+                    handler: () => {
+                        console.log('the user has cancelled the interaction.');
+                    }
+                }
+            ]
+        });
+        return actionsheet.present();
+    }
+
+    takePicture() {
+        const loading = this.loadingCtrl.create();
+
+        loading.present();
+        return this.cameraProvider.getPictureFromCamera().then(picture => {
+            if (picture) {
+                this.dp = picture;
+            }
+            loading.dismiss();
+        }, error => {
+            alert(error);
+        });
+    }
+
+    getPicture() {
+        const loading = this.loadingCtrl.create();
+
+        loading.present();
+        return this.cameraProvider.getPictureFromPhotoLibrary().then(picture => {
+            if (picture) {
+                this.dp = picture;
+
+            }
+            loading.dismiss();
+        }, error => {
+            alert(error);
+        });
+    }
+
 }

@@ -7,39 +7,37 @@ import {
     MenuController,
     NavController,
     NavParams,
-    Platform,
     Select
 } from 'ionic-angular';
 
 import {Firebase} from '@ionic-native/firebase';
 import {AngularFireAuth} from 'angularfire2/auth';
 import {Storage} from "@ionic/storage";
-import {Api} from "../../providers";
 import * as firebase from "firebase";
 
 
 @IonicPage({
-  name: "login"
+    name: "login"
 })
 
 @Component({
-  selector: 'page-login',
-  templateUrl: 'login.html',
+    selector: 'page-login',
+    templateUrl: 'login.html',
 })
 
 export class LoginPage {
-  verificationId = '';
-  code = '';
-  private uid: any ;
-  showCodeInput = false;
+    verificationId = '';
+    code = '';
+    private uid: any ;
+    showCodeInput = false;
     private isDisabled: boolean=false;
 
-  private user: any;
-  private phoneNumber: any;
+    private user: any;
+    private phoneNumber: any;
     private phone: string;
     private userinfo: any = {};
     private logged: any;
-    selectedCode= '+263'
+    selectedCode= '+263';
     @ViewChild('select1') select1: Select;
 
     private countries: any = [
@@ -812,26 +810,6 @@ export class LoginPage {
             dial_code: "+998",
             code: "UZ"
         }, {
-            name: "Vanuatu",
-            dial_code: "+678",
-            code: "VU"
-        }, {
-            name: "Wallis and Futuna",
-            dial_code: "+681",
-            code: "WF"
-        }, {
-            name: "Yemen",
-            dial_code: "+967",
-            code: "YE"
-        }, {
-            name: "Zambia",
-            dial_code: "+260",
-            code: "ZM"
-        }, {
-            name: "Zimbabwe",
-            dial_code: "+263",
-            code: "ZW"
-        }, {
             name: "land Islands",
             dial_code: "",
             code: "AX"
@@ -1011,69 +989,60 @@ export class LoginPage {
             name: "Virgin Islands, U.S.",
             dial_code: "+1 340",
             code: "VI"
+        }, {
+            name: "Vanuatu",
+            dial_code: "+678",
+            code: "VU"
+        }, {
+            name: "Wallis and Futuna",
+            dial_code: "+681",
+            code: "WF"
+        }, {
+            name: "Yemen",
+            dial_code: "+967",
+            code: "YE"
+        }, {
+            name: "Zambia",
+            dial_code: "+260",
+            code: "ZM"
+        }, {
+            name: "Zimbabwe",
+            dial_code: "+263",
+            code: "ZW"
         }
 
     ]
 
 
-  constructor(public navCtrl: NavController, public navParams: NavParams,
-              private FireBase: Firebase,
-              private  alertCtrl: AlertController,
-              private platform: Platform,
-              private afs: AngularFireAuth,
-              private  storage: Storage,
-              private  api: Api,
+    constructor(public navCtrl: NavController, public navParams: NavParams,
+                private FireBase: Firebase,
+                private  alertCtrl: AlertController,
+                private afs: AngularFireAuth,
 
-              private loading:LoadingController,
-              private menu:MenuController,
-  ) {
-      this.ViewDidLoad()
+                private  storage: Storage,
+
+                private loading:LoadingController,
+                private menu:MenuController,
+    ) {
 
 
-  }
-
-    ionViewWillLeave(){
-     //   this.menu.swipeEnable(true);
-    }
-    openSelect() {
-        setTimeout(() => {
-            this.select1.open();
-        }, 150);
     }
 
-   ViewDidLoad() {
-       // const loader = this.loading.create({
-       //     content: "Initializing",
-       //     duration: 3000
-       // });
-     //  loader.present()
-       this.storage.get('login').then((val) => {
-           this.logged = val
+    // ionViewWillLeave(){
+    //     this.menu.enable(true,'menu-avatar');
+    //     this.menu.swipeEnable(true,'menu-avatar');
+    // }
 
 
-           this.afs.authState.subscribe(res => {
-
-               if (res && res.uid && this.logged == res.uid+"true") {
-                   this.uid = res.uid;
-
-                 //  loader.dismissAll()
-
-                   //this.uid = navParams.get('uid') || res.uid;
-                   //this.bid  = navParams.get('bid')|| '1';
-
-                   this.navCtrl.setRoot('HomePage',{
-                    //   refresh:"true",
-                   });
-
-
-               }else {
-                   //loader.dismissAll()
-               }
+    ionViewDidLoad() {
+        this.menu.enable(false,'menu-avatar');
+        this.menu.swipeEnable(false,'menu-avatar');
+        this.storage.get('login').then((val) => {
+            this.logged = val
 
 
 
-           })
-       });
+        });
 
 
 
@@ -1081,59 +1050,60 @@ export class LoginPage {
 
 
     async PhoneLoginNative() {
-console.log(this.selectedCode+this.phoneNumber)
-    if (this.phoneNumber){
-        const loader = this.loading.create({
-        content: "Sending code",
-        duration: 10000
-    });
-        loader.present()
-        this.phone = this.selectedCode+this.phoneNumber;
-       this.FireBase.verifyPhoneNumber(this.phone, 60)
+        console.log(this.selectedCode+this.phoneNumber)
+        if (this.phoneNumber){
+            const loader = this.loading.create({
+                content: "Sending code",
+                duration: 10000
+            });
+            loader.present()
+            this.phone = this.selectedCode+this.phoneNumber;
+            this.FireBase.verifyPhoneNumber(this.phone, 60)
 
-      .then((credential) => {
-        this.verificationId = credential.verificationId;
-       // this.verificationId = credential
-          loader.dismissAll()
-          this.isDisabled = true
-
-
-        this.showCodeInput = true;
-      }).catch((error) => {
-      this.presentAlert(error+"failed")
-        loader.dismissAll()
-      console.error(error)
-    });
-  }
-  else this.presentAlert("Phone Number Cannot Be Null")
-  }
+                .then((credential) => {
+                    this.verificationId = credential.verificationId;
+                    // this.verificationId = credential
+                    loader.dismissAll()
+                    this.isDisabled = true
 
 
+                    this.showCodeInput = true;
+                }).catch((error) => {
+                this.presentAlert(error+"failed")
+                loader.dismissAll()
+                console.error(error)
+            });
+        }
+        else this.presentAlert("Phone Number Cannot Be Null")
+    }
 
-   async verify() {
-       if (this.code){
 
 
-       const loader = this.loading.create({
-            content: "Verifying",
-           duration: 10000
+    async verify() {
+        if (this.code){
 
-       });
-        loader.present()
-        let signInCredential =  await firebase.auth.PhoneAuthProvider.credential(this.verificationId,this.code)//
 
-        this.afs.auth.signInAndRetrieveDataWithCredential(signInCredential).then((success)=>{
-            console.log("iddd" + success.user.uid);
-            loader.dismissAll()
-        }).then().catch(er =>{
-            this.presentAlert("Something went");
-            loader.dismissAll()
-            }
+            const loader = this.loading.create({
+                content: "Verifying",
+                duration: 10000
 
-        )}
+            });
+            loader.present()
+            let signInCredential =  await firebase.auth.PhoneAuthProvider.credential(this.verificationId,this.code)//
 
-       else {
-          this.presentAlert("Please enter a valid code")
+            this.afs.auth.signInAndRetrieveDataWithCredential(signInCredential).then((success)=>{
+                console.log("iddd" + success.user.uid);
+                loader.dismissAll()
+                  this.goToBranch()
+            }).then().catch(er =>{
+                    this.presentAlert("Something went")
+                    loader.dismissAll()
+                }
+
+            )}
+
+        else {
+            this.presentAlert("Please enter a valid code")
         }
 
 
@@ -1141,15 +1111,15 @@ console.log(this.selectedCode+this.phoneNumber)
     }
 
 
-  presentAlert(id) {
-    let alert: Alert = this.alertCtrl.create({
-    title: id,
+    presentAlert(id) {
+        let alert: Alert = this.alertCtrl.create({
+            title: id,
 
-    buttons: ['Dismiss'],
+            buttons: ['Dismiss'],
 
-});
-    alert.present();
-  }
+        });
+        alert.present();
+    }
 
 
     alertResend() {
@@ -1165,7 +1135,7 @@ console.log(this.selectedCode+this.phoneNumber)
                     text:'Okay',handler: data =>{
                         this.PhoneLoginNative()
 
-        }
+                    }
                 }],
 
         });
@@ -1179,47 +1149,50 @@ console.log(this.selectedCode+this.phoneNumber)
         this.afs.authState.subscribe(res => {
 
             if (res && res.uid ) {
-
-                this.navCtrl.push('HomePage', {
+                this.menu.enable(true,'menu-avatar');
+                this.menu.swipeEnable(true,'menu-avatar');
+                this.navCtrl.push('ModalComplete', {
                     uid: res.uid,
-                    phone: this.phone
+                    phone: this.phone,
+
+
                 })
             }
-    })
+        })
 
 
-  }
-   goToLogin(){
+    }
+    goToLogin(){
+        this.menu.swipeEnable(true,'menu-avatar');
+        this.menu.enable(true,'menu-avatar');
 
-      this.navCtrl.setRoot('HomePage',{
-          uid:this.uid,
-      },{
-          direction: 'forward',
-          animate: true
-      });
+        this.navCtrl.push('AboutTabsPage',{
+            uid:this.uid,
+        });
 
-  }
-
-  resendCode(){
-      this.alertResend()
-  }
-  reEnter(){
-      this.navCtrl.setRoot(this.navCtrl.getActive().component);
-
-  }
-email() {
-    // let credentials = {
-    //     email: 'lesterrrusike@gmaila.com',
-    //     password: 'llllllll'
-    // };
-this.afs.auth.signInAndRetrieveDataWithEmailAndPassword('lesterrusike@gmail.com','llllllll')
-    .then((success)=>{
-        console.log("iddiiid" + success.user.uid);
-    }).then().catch(er =>{
-        this.presentAlert("Something went wrong")
     }
 
-)}
+    resendCode(){
+        this.alertResend()
+    }
+    reEnter(){
+        this.navCtrl.setRoot(this.navCtrl.getActive().component);
+
+    }
+    email() {
+        // let credentials = {
+        //     email: 'lesterrrusike@gmaila.com',
+        //     password: 'llllllll'
+        // };
+        this.afs.auth.signInAndRetrieveDataWithEmailAndPassword('lesterrusike@gmail.com','llllllll')
+            .then((success)=>{
+                console.log("iddiiid" + success.user.uid);
+            }).then().catch(er =>{
+                this.presentAlert("Something went wrong")
+            }
+
+        )}
+
 
 
 

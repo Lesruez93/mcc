@@ -29,6 +29,7 @@ import {FcmProvider} from "../providers/fcm/fcm";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {ModalContentPage} from "../pages/faults/modal-content-page.component";
 import {Geolocation} from "@ionic-native/geolocation";
+import { CameraProvider } from '../providers/camera/camera';
 
 
 const config = {
@@ -125,6 +126,7 @@ export function provideSettings(storage: Storage) {
 
 // Keep this to enable Ionic's runtime error handling during development
     { provide: ErrorHandler, useClass: IonicErrorHandler },
+    CameraProvider,
   ]
 })
 export class AppModule { }

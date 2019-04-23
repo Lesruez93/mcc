@@ -65,6 +65,25 @@ export class FaultsPage {
         this.loadData();
 
     }
+    filter(){
+        this.faultsRef = this.afs.
+        collection("faults",ref =>
+            ref
+            .where('location','==',this.ftype)
+
+                .orderBy("id","desc",));
+        //this.faults = this.faultsRef.valueChanges();
+        this.faults = this.faultsRef.snapshotChanges().map
+        (changes => {
+            return changes.map(
+                a => {
+                    const data = a.payload.doc.data() as Faults;
+                    data.docid = a.payload.doc.id;
+                    return data
+                }
+            )
+        }) ;
+    }
     loadData(){
         this.faultsRef = this.afs.
         collection("faults",ref =>
@@ -84,7 +103,6 @@ export class FaultsPage {
             )
         }) ;
     }
-
 
     checkAuth () {
         this.afAuth.authState.subscribe(res => {

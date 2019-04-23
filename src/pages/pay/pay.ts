@@ -30,7 +30,7 @@ export class PayPage {
 
     private number: any;
     private user: any = 'Lester';
-    private address: any;
+    private account: any;
 
   constructor(public navCtrl: NavController,
               public afs: AngularFirestore,
@@ -44,12 +44,17 @@ export class PayPage {
 
               ionViewDidLoad() {
                 console.log('ionViewDidLoad PayPage');
+                //Loading the Page
               }
 
                       pay(){
+                        //Paynow sample code
+              //payment Function for making the Payment
                           const Paynow = require("paynow");
                           let testIntegrationId = '4198';
                           let testIntegrationKey = '5c74798d-f9b0-42e0-9a61-a48138a7189c';
+                          // let testIntegrationId = '7438';
+                          // let testIntegrationKey = 'dff90f5-ccae-4803-8701-c5e83c6675b1';
                           let paynow = new Paynow(testIntegrationId, testIntegrationKey);
 
 
@@ -59,6 +64,7 @@ export class PayPage {
                           payment.add("Bii", this.amount);
 
                           paynow.sendMobile(payment,this.number,'ecocash').then(response => {
+
                               if (response.success) {
                                   let link = response.redirectUrl;
                                   console.log('Go to ' + link + ' to complete the transaction.');
@@ -74,13 +80,13 @@ export class PayPage {
 
 
                         async makePayment() {
-
+                        //Function for addinf payment info to the database
 
                             let content: any = {
                                 amount: this.amount,
                                 id:this.pid,
                                 date: this.dtt,
-                                address:this.address,
+                                account:this.account,
                                 user: this.user,
                                 number: this.number
 
@@ -112,6 +118,7 @@ export class PayPage {
 
     dismiss(){
       console.log('lslslslslslslsldclicked');
+      //dismissing the modal
       this.viewCtrl.dismiss()
 
     }
