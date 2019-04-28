@@ -14,6 +14,9 @@
 <ion-select color="danger" [(ngModel)]="ftype" (ionChange)="loadData()">
   <ion-option value="CBD" selected>CBD</ion-option>
   <ion-option value="dangamvura">Dangamvura</ion-option>
+  <ion-option value="chikanga">Chikanga</ion-option>
+  <ion-option value="sakubva">Sakubva</ion-option>
+
 </ion-select>
 
   <ion-list>
@@ -36,7 +39,7 @@
 
 
   </ion-list>
-<ion-fab bottom end (click)="addFault()">
+<ion-fab  hidden bottom end (click)="addFault()">
   <button ion-fab><ion-icon name="add"></ion-icon></button>
 </ion-fab>
 

@@ -12,6 +12,7 @@
     <p padding-left>Location: {{item.location}}  </p>
     <p padding-left>From:  {{item.member}} </p>
     <p padding>{{item.message}} </p>
+    <img src="{{item.dp}}">
   </ion-card>
   <ion-card>
 
@@ -56,7 +57,6 @@
          [class.left]=" msg.uid === uid"
          [class.right]=" msg.uid != uid">
 
-      <img *ngIf="msg.image" class="user-img"   src="{{msg.image}}">
       <img  *ngIf="!msg.image" class="user-img" src="./assets/img/speakers/profpic.png">
 
       <div class="msg-detail">

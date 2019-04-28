@@ -40,7 +40,7 @@ export class FaultsPage {
 
    private dtt = moment().format('YYYY-MM-DD HH:m:s');
     private uid: any;
-    private ftype: any = 'Domestic';
+    private ftype: any ;
     private lat: number;
     private lon: number;
 
@@ -69,7 +69,7 @@ export class FaultsPage {
             this.faultsRef = this.afs.
             collection("faults",ref =>
                 ref
-                    //.where('type','==',this.ftype)
+                    .where('type','==',this.ftype)
 
                 .orderBy("id","desc",));
             //this.faults = this.faultsRef.valueChanges();
