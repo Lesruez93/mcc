@@ -1,3 +1,4 @@
+<body class="co">
 <ion-header>
 
   <ion-navbar color="primary">
@@ -12,14 +13,15 @@
     <p padding-left>Location: {{item.location}}  </p>
     <p padding-left>From:  {{item.member}} </p>
     <p padding>{{item.message}} </p>
-    <img src="{{item.dp}}">
+  <div *ngIf="item.dp" text-center padding="">
+      <img  style="height: 60%; width: 60%" [src]="item.dp" onError="this.src='./assets/img/speakers/profpic.png';"/> </div>
   </ion-card>
   <ion-card>
 
   </ion-card>
-      <img margin="" src="item.dp" class="box">
-  <ion-card margin="" class="adv-map">
-    <agm-map
+ <ion-card margin="" class="adv-map">
+
+    <div padding=""> <agm-map padding=""
             [latitude]="item.lat"
             [longitude]="item.lon"
             [zoom]="zoom"
@@ -38,7 +40,7 @@
 
 
 
-    </agm-map>
+    </agm-map></div>
     <ion-item actions>
 
 
@@ -56,10 +58,10 @@
          class="message"
          [class.left]=" msg.uid === uid"
          [class.right]=" msg.uid != uid">
+        <img  [src]="msg.dp" class="user-img" onError="this.src='./assets/img/speakers/profpic.png';"/>
 
-      <img  *ngIf="!msg.image" class="user-img" src="./assets/img/speakers/profpic.png">
 
-      <div class="msg-detail">
+        <div class="msg-detail">
         <div class="msg-info">
           <p>
             {{msg.time |amTimeAgo:'en' }}</p>
@@ -106,3 +108,4 @@
     </button>
   </div>
 </ion-footer>
+</body>

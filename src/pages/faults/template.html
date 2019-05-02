@@ -1,13 +1,13 @@
-
+<body class="co">
 <ion-header class="header">
-  <ion-toolbar color="primary">
+  <ion-navbar color="primary">
 
     <ion-buttons>
       <ion-title medium>&nbsp; &nbsp; Faults</ion-title>
     </ion-buttons>
 
 
-  </ion-toolbar>
+  </ion-navbar>
 </ion-header>
 
 <ion-content class="list-avatar-page">
@@ -32,8 +32,10 @@
 
         <p padding-top>Location: {{fault.location}}</p>
       <p>From:  {{fault.member}}</p>
+        <p>Phone:  {{fault.number}}</p>
 
-      <ion-note item-end>{{fault.date | amTimeAgo:'en'}} ago</ion-note>
+
+        <ion-note item-end>{{fault.date | amTimeAgo:'en'}} ago</ion-note>
         <ion-note color="color-green" item-end>{{fault.status}}</ion-note>
     </ion-item>
 
@@ -46,3 +48,4 @@
 
 
 </ion-content>
+</body>

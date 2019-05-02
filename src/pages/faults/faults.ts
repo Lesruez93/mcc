@@ -1,18 +1,20 @@
 import {Component} from '@angular/core';
 import {
-    ActionSheetController, Alert, AlertController,
+    ActionSheetController,
+    Alert,
+    AlertController,
     IonicPage,
     LoadingController,
     MenuController,
     ModalController,
-    NavController, NavParams
+    NavController,
+    NavParams
 } from "ionic-angular";
 import {AngularFireAuth} from "angularfire2/auth";
 import {AngularFirestore, AngularFirestoreCollection} from "angularfire2/firestore";
 import {Observable} from "rxjs-compat";
 import * as moment from "moment"
 import {Api} from "../../providers/api/api";
-import {ModalContentPage} from "./modal-content-page.component";
 import {Geolocation} from "@ionic-native/geolocation";
 
 interface Faults {
@@ -159,7 +161,12 @@ export class FaultsPage {
                       text: 'Assign',
 
                       handler: () => {
-                         // this.openModal(id)
+                          let updateData ={
+                                  'status':'Assigned',
+
+                              }
+                              const fault = this.afs.collection("faults").doc(id.docid);
+                              fault.update(updateData)
                       }
                   },{
                       text: 'View or Reply',
@@ -174,15 +181,8 @@ export class FaultsPage {
                           this.resolved(id)
 
                       }
-                  }
-                  ,
-                  {
-                      text: 'Edit',
-                      handler: () => {
-                          this.edit(id)
-
-                      }
                   },
+
                   {
                       text: 'Cancel',
                       role: 'cancel',
@@ -235,22 +235,8 @@ export class FaultsPage {
 }
 
 
-    private edit(id: any) {
-        let modal = this.modalCtrl.create(ModalContentPage,{
-            id:id.docid,
-            data:id
-        });
-        modal.present();
-    }
 
 
-    addFault(){
-        let modal = this.modalCtrl.create(ModalContentPage,{
-          lat:this.lat,
-            lon:this.lon
-        });
-        modal.present();
-    }
 
 }
 
