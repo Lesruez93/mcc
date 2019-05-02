@@ -11,11 +11,12 @@
 </ion-header>
 
 <ion-content class="list-avatar-page">
-<ion-select color="danger" [(ngModel)]="ftype" (ionChange)="loadData()">
-  <ion-option value="CBD" selected>CBD</ion-option>
-  <ion-option value="dangamvura">Dangamvura</ion-option>
-  <ion-option value="chikanga">Chikanga</ion-option>
-  <ion-option value="sakubva">Sakubva</ion-option>
+<ion-select color="danger" [(ngModel)]="ftype" (ionChange)="load()">
+  <ion-option value="all">All</ion-option>
+  <ion-option value="CBD" >CBD</ion-option>
+  <ion-option value="Dangamvura">Dangamvura</ion-option>
+  <ion-option value="Chikanga">Chikanga</ion-option>
+  <ion-option value="Sakubva">Sakubva</ion-option>
 
 </ion-select>
 

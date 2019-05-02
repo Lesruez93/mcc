@@ -33,7 +33,7 @@ export class MyApp {
                 private config: Config,
                 private storage: Storage,
                 private statusBar: StatusBar,
-                private fcm: FcmProvider,
+                   private fcm: FcmProvider,
                 private   toastCtrl: ToastController,
                 private churchname: Api,
                 private menu: MenuController,

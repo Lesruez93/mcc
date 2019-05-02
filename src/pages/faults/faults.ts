@@ -65,25 +65,50 @@ export class FaultsPage {
             this.loadData();
 
           }
-          loadData(){
-            this.faultsRef = this.afs.
-            collection("faults",ref =>
-                ref
-                    .where('type','==',this.ftype)
+          load(){
+      if (this.ftype == 'all'){
+          this.loadData()
+      }
+      else {
+          this.faultsRef = this.afs.collection("faults", ref =>
+              ref
+                  .where('location', '==', this.ftype)
+
+                  .orderBy("id", "desc",));
+          //this.faults = this.faultsRef.valueChanges();
+          this.faults = this.faultsRef.snapshotChanges().map
+          (changes => {
+              return changes.map(
+                  a => {
+                      const data = a.payload.doc.data() as Faults;
+                      data.docid = a.payload.doc.id;
+                      return data
+                  }
+              )
+          });
+      }
+          }
+
+
+    loadData(){
+        this.faultsRef = this.afs.
+        collection("faults",ref =>
+            ref
+               // .where('type','==',this.ftype)
 
                 .orderBy("id","desc",));
-            //this.faults = this.faultsRef.valueChanges();
-            this.faults = this.faultsRef.snapshotChanges().map
-            (changes => {
-              return changes.map(
+        //this.faults = this.faultsRef.valueChanges();
+        this.faults = this.faultsRef.snapshotChanges().map
+        (changes => {
+            return changes.map(
                 a => {
-                  const data = a.payload.doc.data() as Faults;
-                  data.docid = a.payload.doc.id;
-                  return data
+                    const data = a.payload.doc.data() as Faults;
+                    data.docid = a.payload.doc.id;
+                    return data
                 }
-              )
-            }) ;
-          }
+            )
+        }) ;
+    }
 
 
     checkAuth () {
